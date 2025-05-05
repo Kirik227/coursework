@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Math Game Trainer"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Difficulty:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/difficultyGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp">
+
+        <RadioButton
+            android:id="@+id/easyRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Easy"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/mediumRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medium"/>
+
+        <RadioButton
+            android:id="@+id/hardRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hard"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Operations:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <CheckBox
+        android:id="@+id/additionCheckbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Addition (+)"/>
+
+    <CheckBox
+        android:id="@+id/subtractionCheckbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subtraction (-)"/>
+
+    <CheckBox
+        android:id="@+id/multiplicationCheckbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiplication (×)"/>
+
+    <CheckBox
+        android:id="@+id/divisionCheckbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Division (÷)"/>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Game"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/highScoreButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="High Scores"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/achievementsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Achievements"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
+
