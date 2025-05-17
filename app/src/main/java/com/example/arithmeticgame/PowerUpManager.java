@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class PowerUpManager {
+public class  PowerUpManager {
 
     public enum PowerUpType {
         EXTRA_TIME,
@@ -96,8 +96,8 @@ public class PowerUpManager {
         // Extra Time: Adds 10 seconds to the timer
         availablePowerUps.add(new PowerUp(
                 PowerUpType.EXTRA_TIME,
-                "Extra Time",
-                "Adds 10 seconds to the timer",
+                "Дополнительное время",
+                "Добавляет 10 секунд к таймеру",
                 R.drawable.ic_launcher_foreground, // Replace with actual icon
                 0 // Instant use
         ));
@@ -105,8 +105,8 @@ public class PowerUpManager {
         // Hint: Shows the first digit of the answer
         availablePowerUps.add(new PowerUp(
                 PowerUpType.HINT,
-                "Hint",
-                "Shows the first digit of the answer",
+                "Подсказка",
+                "Показать первую цифру ответа",
                 R.drawable.ic_launcher_foreground, // Replace with actual icon
                 0 // Instant use
         ));
@@ -114,8 +114,8 @@ public class PowerUpManager {
         // Skip Problem: Skips the current problem without penalty
         availablePowerUps.add(new PowerUp(
                 PowerUpType.SKIP_PROBLEM,
-                "Skip",
-                "Skips the current problem without penalty",
+                "Пропустить",
+                "Пропустить текущую проблему без штрафов",
                 R.drawable.ic_launcher_foreground, // Replace with actual icon
                 0 // Instant use
         ));
@@ -123,8 +123,8 @@ public class PowerUpManager {
         // Double Points: Doubles points for 30 seconds
         availablePowerUps.add(new PowerUp(
                 PowerUpType.DOUBLE_POINTS,
-                "Double Points",
-                "Doubles points for 30 seconds",
+                "Двойные баллы",
+                "Удваивает очки в течение 30 секунд",
                 R.drawable.ic_launcher_foreground, // Replace with actual icon
                 30000 // 30 seconds duration
         ));

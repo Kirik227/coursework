@@ -19,14 +19,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Score: 0"
+            android:text="Счет: 0"
             android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/levelTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Level 1"
+            android:text="Уровень 1"
             android:textSize="18sp"
             android:layout_marginEnd="16dp"/>
 
@@ -34,7 +34,7 @@
             android:id="@+id/timerTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Time: 10.0"
+            android:text="Время: 10.0"
             android:textSize="18sp"/>
     </LinearLayout>
 
@@ -42,7 +42,7 @@
         android:id="@+id/comboTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Good! x2"
+        android:text="Хорошо! x2"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@android:color/holo_orange_dark"
@@ -96,7 +96,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Enter your answer"
+            android:hint="Введите свой ответ"
             android:inputType="number"
             android:imeOptions="actionDone"/>
 
@@ -104,7 +104,7 @@
             android:id="@+id/checkButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Check"/>
+            android:text="Проверить"/>
     </LinearLayout>
 
 </LinearLayout>

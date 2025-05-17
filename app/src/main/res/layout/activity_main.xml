@@ -10,16 +10,25 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Math Game Trainer"
+        android:text="Тренажер математических операций"
         android:textSize="24sp"
         android:textStyle="bold"
         android:gravity="center"
-        android:layout_marginBottom="32dp"/>
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/pointsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Баллы: 0"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select Difficulty:"
+        android:text="Выберите уровень сложности:"
         android:textSize="18sp"
         android:textStyle="bold"
         android:layout_marginBottom="8dp"/>
@@ -29,32 +38,32 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginBottom="24dp">
+        android:layout_marginBottom="16dp">
 
         <RadioButton
             android:id="@+id/easyRadio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Easy"
+            android:text="Легкий"
             android:checked="true"/>
 
         <RadioButton
             android:id="@+id/mediumRadio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Medium"/>
+            android:text="Средний"/>
 
         <RadioButton
             android:id="@+id/hardRadio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hard"/>
+            android:text="Сложно"/>
     </RadioGroup>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select Operations:"
+        android:text="Выберите операции:"
         android:textSize="18sp"
         android:textStyle="bold"
         android:layout_marginBottom="8dp"/>
@@ -63,46 +72,101 @@
         android:id="@+id/additionCheckbox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Addition (+)"/>
+        android:text="Сложение (+)"/>
 
     <CheckBox
         android:id="@+id/subtractionCheckbox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Subtraction (-)"/>
+        android:text="Вычитание(-)"/>
 
     <CheckBox
         android:id="@+id/multiplicationCheckbox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Multiplication (×)"/>
+        android:text="Умножение (×)"/>
 
     <CheckBox
         android:id="@+id/divisionCheckbox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Division (÷)"/>
+        android:text="Деление (÷)"/>
 
     <Button
         android:id="@+id/startButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start Game"
+        android:text="Начать игру"
         android:layout_marginTop="24dp"/>
 
-    <Button
-        android:id="@+id/highScoreButton"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="High Scores"
-        android:layout_marginTop="8dp"/>
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
 
-    <Button
-        android:id="@+id/achievementsButton"
+        <Button
+            android:id="@+id/highScoreButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Наивысший балл"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/achievementsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Достижения"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Achievements"
-        android:layout_marginTop="8dp"/>
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/shopButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Магазин"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/dailyChallengeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ежедневное задание"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/leaderboardButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Таблица лидеров"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Настройки"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
 
 </LinearLayout>
 

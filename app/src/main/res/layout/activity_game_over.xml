@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Game Over!"
+        android:text="Игра окончена!"
         android:textSize="36sp"
         android:textStyle="bold"
         android:gravity="center"
@@ -21,7 +21,7 @@
         android:id="@+id/finalScoreTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Final Score: 0"
+        android:text="Итоговый счет: 0"
         android:textSize="24sp"
         android:gravity="center"
         android:layout_marginBottom="16dp"/>
@@ -30,7 +30,7 @@
         android:id="@+id/highScoreTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="High Score: 0"
+        android:text="Наивысший балл: 0"
         android:textSize="20sp"
         android:gravity="center"
         android:layout_marginBottom="32dp"/>
@@ -39,14 +39,14 @@
         android:id="@+id/playAgainButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Play Again"
+        android:text="Сыграть еще"
         android:layout_marginBottom="16dp"/>
 
     <Button
         android:id="@+id/mainMenuButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Main Menu"/>
+        android:text="Главное меню"/>
 
 </LinearLayout>
 

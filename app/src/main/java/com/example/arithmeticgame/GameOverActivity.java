@@ -35,7 +35,7 @@ public class GameOverActivity extends AppCompatActivity {
         updateHighScore(finalScore, difficulty);
 
         // Display final score
-        finalScoreTextView.setText("Final Score: " + finalScore);
+        finalScoreTextView.setText("Финальные очки: " + finalScore);
 
         // Set up play again button
         playAgainButton.setOnClickListener(new View.OnClickListener() {

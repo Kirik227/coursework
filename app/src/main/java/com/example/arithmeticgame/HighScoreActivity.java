@@ -40,7 +40,7 @@ public class HighScoreActivity extends AppCompatActivity {
 
     private void loadHighScores() {
         // Get shared preferences
-        SharedPreferences prefs = getSharedPreferences("MathGamePrefs", MODE_PRIVATE);
+        SharedPreferences prefs = getSharedPreferences("Настройки математической игры", MODE_PRIVATE);
 
         // Get high scores for each difficulty
         int easyHighScore = prefs.getInt("HIGH_SCORE_EASY", 0);
@@ -48,9 +48,9 @@ public class HighScoreActivity extends AppCompatActivity {
         int hardHighScore = prefs.getInt("HIGH_SCORE_HARD", 0);
 
         // Display high scores
-        easyScoreTextView.setText("Easy: " + easyHighScore);
-        mediumScoreTextView.setText("Medium: " + mediumHighScore);
-        hardScoreTextView.setText("Hard: " + hardHighScore);
+        easyScoreTextView.setText("Легкий: " + easyHighScore);
+        mediumScoreTextView.setText("Средний: " + mediumHighScore);
+        hardScoreTextView.setText("Сложный: " + hardHighScore);
     }
 }
 

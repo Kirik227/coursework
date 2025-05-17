@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/tutorialImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="Обучающее изображение" />
+
+    <TextView
+        android:id="@+id/tutorialTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Название учебного пособия"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tutorialDescriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Текст описания руководства приведен здесь. Здесь объясняется функция или концепция, представленные на этой странице руководства."
+        android:textSize="16sp"
+        android:gravity="center" />
+
+</LinearLayout>
+
